@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-p@+vsuad&m$ap7k_g#=b)=m+o&2ozfut@%&pwyipptqy^2@!g!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'serverDia.apps.ServerdiaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -75,8 +76,12 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'DiaCompanionDB',
+        'USER': 'postgres',
+        'PASSWORD': '1245',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
