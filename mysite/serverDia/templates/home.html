@@ -1,0 +1,83 @@
+<!doctype html>
+{% load static %}
+<html lang="ru" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="{% static 'diaIcon.svg' %}" type="image/svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    hr.dot {
+      color: #333;
+      overflow: visible;
+      text-align: center;
+      height: 5px;
+    }
+
+    hr:after {
+      background: #fff;
+      content: attr(data-content);
+      padding: 0 1.5rem;
+      position: relative;
+      top: -15px;
+      font-size: large;
+      font-family: 'SF Pro Text';
+    }
+
+    p {
+      margin: 0;
+    }
+
+    @font-face {
+      font-family: 'SF Pro Text';
+      src: local('SF Pro Text'),
+        url({% static 'SFProText-Regular.ttf' %});
+    }
+  </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+  <main class="flex-shrink-0">
+    <div class="container">
+      <div class="vstack gap-3 mt-5">
+        <img src="{% static 'diaIcon.svg' %}" class="rounded mx-auto" style="max-width:10vh; max-height:10vh;">
+        <img src="{% static 'greetings.svg' %}" class="rounded mx-auto" style="max-width:100vh; max-height:100vh;">
+        <hr class="dot" data-content="О приложении">
+        <div class="container">
+          <p class="text-center" style="font-family: 'SF Pro Text';">Приложение представляет собой платформу для
+            систематизации
+            приемов пищи, физической активности, сна и введения инсулина. Электронный дневник формируется на основе
+            данных, заполняемых пользователем ежедневно, его можно сохранить на своем устройстве или переслать по почте
+            или в мессенджере.
+          </p>
+        </div>
+        <div class="container d-flex justify-content-center align-items-center">
+          <p class="text-center" style="font-size: large; font-family: 'SF Pro Text';">Присоединиться к исследованию</p>
+          <img src="{% static 'chevron-down.svg' %}" class="rounded ms-1 me-1" style="max-width: 1rem; max-height:1rem;">
+        </div>
+        <div class="hstack mt-3 mb-3 gap-3 justify-content-center align-items-center">
+          <img src="{% static 'androidIcon.svg' %}" class="mx-auto" style="max-width:10vh; max-height:10vh;">
+          <img src="{% static 'iosIcon.svg' %}" class="mx-auto" style="max-width:10vh; max-height:10vh;">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container-fluid">
+      <div class="vstack align-items-center">
+        <p class="text-center"  style="font-family: 'SF Pro Text';">© Almazov National Medical Research Centre</p>
+        <p class="text-center"  style="font-family: 'SF Pro Text';">diacompanion@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
