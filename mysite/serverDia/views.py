@@ -1,5 +1,4 @@
 from django.contrib.auth.decorators import login_required
-from django.views.decorators.csrf import csrf_exempt
 from django.middleware.csrf import get_token
 from django.http import JsonResponse
 from django.shortcuts import render
@@ -29,7 +28,6 @@ def get_all_users(request):
 def user_login(request):
     if request.method == 'GET':
         csrf_token = get_token(request)
-        #csrf_token_html = '<input type="hidden" name="csrfmiddlewaretoken" value="{}" />'.format(csrf_token)
         return HttpResponse(csrf_token)
     elif request.method == 'POST':
         username = request.POST.get('username')
