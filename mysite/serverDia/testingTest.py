@@ -16,4 +16,3 @@ data = {
 }
 
 response = requests.post(LOGIN_URL, data=data, headers=headers)
-print(response.request, response.status_code, response.content)
