@@ -24,14 +24,15 @@ SECRET_KEY = 'django-insecure-p@+vsuad&m$ap7k_g#=b)=m+o&2ozfut@%&pwyipptqy^2@!g!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = []
 
-CSRF_TRUSTED_ORIGINS = ['http://127.0.0.1:8000/']
+CSRF_TRUSTED_ORIGINS = []
 
 # Application definition
 
 INSTALLED_APPS = [
     'rest_framework',
+    'rest_framework_simplejwt',
     'serverDia.apps.ServerdiaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -73,8 +74,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
-    ]
+        'rest_framework.permissions.IsAuthenticated'
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    )
 }
 
 # Database
