@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef1a1158-e257-43d6-b84d-44cefb89ebcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mysite/serverDia/migrations/0005_alter_diausers_email.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/serverDia/migrations/0006_alter_diausers_email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/serverDia/server_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/serverDia/server_urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/serverDia/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/serverDia/views.py" afterDir="false" />
     </list>
@@ -37,7 +32,8 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amedi/Downloads/SVR_model&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
